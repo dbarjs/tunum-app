@@ -5,6 +5,10 @@
       <span>{{user.name}}</span>
       <span>{{user.age}}</span>
     </p>
+    <p>Documentos do autor:</p>
+    <ul>
+      <li v-for="document in documents" :key="document.id">{{document.title}}</li>
+    </ul>
     <button ref="fooButton" class="mdc-button mdc-button--raised">Foo Button</button>
   </div>
 </template>
@@ -32,7 +36,7 @@ export default {
       immediate: true,
       handler(id) {
         this.$bind("user", users.doc(this.id)).then(user => {
-          console.log(user);
+          console.log(this.user);
         });
         this.$bind("documents", documents.where("ref", "==", this.id)).then(
           documents => {

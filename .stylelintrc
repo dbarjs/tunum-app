@@ -1,7 +1,6 @@
 {
-  "extends": "stylelint-config-recommended", {
-    "rules": {
-      "max-nesting-depth": 2
-    }
+  "extends": "stylelint-config-recommended",
+  "rules": {
+    "max-nesting-depth": 2
   }
 }
