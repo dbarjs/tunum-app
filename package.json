@@ -1,0 +1,46 @@
+{
+  "name": "tunum-app",
+  "version": "0.1.0",
+  "description": "Tunum Transportes App",
+  "main": "index.js",
+  "repository": "https://github.com/dbarjs/tunum-app.git",
+  "author": "Eduardo Barros <joseeduardobarros@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "webpack-dev-server --env development",
+    "build": "webpack --env production"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.2.0",
+    "cssnano": "^4.1.10",
+    "dotenv": "^8.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.8.0",
+    "node-sass": "^4.12.0",
+    "postcss": "^7.0.17",
+    "postcss-google-color": "^2.0.1",
+    "postcss-loader": "^3.0.0",
+    "postcss-preset-env": "^6.7.0",
+    "sass-loader": "^7.2.0",
+    "style-loader": "^1.0.0",
+    "stylelint": "^10.1.0",
+    "stylelint-config-recommended": "^2.2.0",
+    "vue-loader": "^15.7.1",
+    "vue-style-loader": "^4.1.2",
+    "vue-template-compiler": "^2.6.10",
+    "webpack": "^4.39.1",
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^3.8.0",
+    "webpack-merge": "^4.2.1"
+  },
+  "dependencies": {
+    "firebase": "^6.3.5",
+    "material-components-vue": "^1.1.0",
+    "material-components-web": "^3.1.0",
+    "vue": "^2.6.10",
+    "vuefire": "^2.1.2"
+  }
+}
